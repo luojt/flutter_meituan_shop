@@ -31,13 +31,8 @@ class _Page2State extends State<Page2> {
       controller: _listScrollController,
       itemExtent: 150,
       itemBuilder: (context, index) => Container(
-        child: Material(
-          elevation: 4.0,
-          borderRadius: BorderRadius.circular(5.0),
-          color: index % 2 == 0 ? Colors.cyan : Colors.deepOrange,
-          child: Center(child: Text(index.toString())),
-        ),
-      ),
+          child: Image.network(
+              "https://pics2.baidu.com/feed/64380cd7912397ddf568c341af4e01b0d1a287b2.jpeg?token=8db6611508b0a199cace55fe82fea5fb")),
     );
   }
 
