@@ -75,6 +75,13 @@ class _ShopPageState extends State<ShopPage>
               title: Text("店铺首页", style: TextStyle(color: Colors.white)),
               backgroundColor: Colors.blue,
               expandedHeight: _sliverAppBarMaxHeight,
+              flexibleSpace: FlexibleSpaceBar(
+                title: Text('复仇者联盟'),
+                background: Image.network(
+                  'http://img.haote.com/upload/20180918/2018091815372344164.jpg',
+                  fit: BoxFit.fitHeight,
+                ),
+              ),
             ),
             SliverPersistentHeader(
               pinned: false,
